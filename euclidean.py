@@ -60,7 +60,7 @@ def play_layer(beats, slots, bpm, bars, freq):
 
 threads = [
     threading.Thread(target=play_layer, args=(3, 8,  120, 8, 80)),   # kick
-    threading.Thread(target=play_layer, args=(5, 8,  120, 8, 300)),  # snare
+    threading.Thread(target=play_layer, args=(4, 8,  120, 8, 300)),  # snare
     threading.Thread(target=play_layer, args=(7, 16, 120, 8, 800)),  # hihat
 ]
 for t in threads:
